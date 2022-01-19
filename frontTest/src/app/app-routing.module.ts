@@ -5,7 +5,7 @@ import { ParserPasswordPalindoneComponent } from './parser-password-palindone/pa
 
 const routes: Routes = [
   {path: '',pathMatch:'full' ,redirectTo: 'start'},
-  { path: 'start', component : ParserPasswordPalindoneComponent}
+  { path: 'start/:password', component : ParserPasswordPalindoneComponent}
 ];
 
 @NgModule({
