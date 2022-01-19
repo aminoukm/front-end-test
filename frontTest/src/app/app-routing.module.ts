@@ -1,7 +1,12 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { ParserPasswordPalindoneComponent } from './parser-password-palindone/parser-password-palindone.component';
+
+const routes: Routes = [
+  {path: '',pathMatch:'full' ,redirectTo: 'start'},
+  { path: 'start', component : ParserPasswordPalindoneComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
